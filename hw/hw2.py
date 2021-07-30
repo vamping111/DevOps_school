@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
 l=input("Enter some values: ")
-print(l.split())
-print(list(set(l.split())))
+
+space=l.split()
+for val in space:
+	print(val, end=' ')
+print(' ')
+
+total=list(set(l.split()))
+for val in total:
+        print(val, end=' ')
+print(' ')
