@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from collections import Counter
-Enter = input("Enter values: ").lower()
-array = Enter.split()
-word=(max(set(array),key=array.count))
-number=(Enter.count(max(set(array),key=array.count)))
-print(word,"-",number)
-
+import collections
+inp=input("Enter your values: ").lower()
+stage=inp.split()
+number=(inp.count(max(set(stage),key=stage.count)))
+col=collections.Counter(stage).most_common(number)
+total='\n'.join('-'.join(map(str,i))for i in col)
+print(total)
