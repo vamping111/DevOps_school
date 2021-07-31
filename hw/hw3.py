@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-import collections
-inp=input("Enter your values: ").lower()
-stage=inp.split()
-number=(inp.count(max(set(stage),key=stage.count)))
-col=collections.Counter(stage).most_common(number)
-total='\n'.join('-'.join(map(str,i))for i in col)
-print(total)
+import numpy as np
+
+enter=input("Enter your values: ").lower()
+stage=enter.split()
+number=(enter.count(max(set(stage),key=stage.count)))
+
+a=np.array(stage)
+un, cnt=np.unique(a, return_counts=True)
+words=un[cnt==cnt.max()]
+for i in words:
+    print(i,'-',number)
+
+
