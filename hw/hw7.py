@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 print("First part of the task")
 import collections
-inputfile='/etc/passwd'
+inputfile='./passwd'
 arr=[]
 myfile=open(inputfile,mode='r',encoding='utf_8')
 for line in myfile:
@@ -16,8 +16,8 @@ for i in col:
 print("\nSecond part of the task")
 user=[]
 group=[]
-groupfile='/etc/group'
-passwdfile='/etc/passwd'
+groupfile='./group'
+passwdfile='./passwd'
 n=0
 grpfile=open(groupfile,mode='r',encoding='utf_8')
 for line in grpfile:
