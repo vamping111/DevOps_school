@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-inp=input("Enter your values: ")
-array=[]
-numeric=''
-for char in inp:
-    if char.isdigit():
-        numeric=numeric+char
-    else:
-        if numeric!='':
-            array.append(int(numeric))
-            numeric=''
-    if numeric!='':
-        array.append(int(numeric))
-print(sum(array))
+import re
+a = input("Введите ваши значения: ")
+neg_dig=re.findall("-\d+",a)
+tot_neg_dig=[i*2 for i in neg_dig]
+pos_dig=re.findall("\d+",a)
+for i in neg_dig*2:
+    pos_dig.append(i)
+total=0
+for b in pos_dig:
+    total=total+int(b)
+print(total)
