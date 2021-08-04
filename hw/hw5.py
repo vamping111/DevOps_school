@@ -7,5 +7,6 @@ try:
     (min(solution(A)))
     print("The value: ",(min(solution(A))), " is missed")
 except ValueError:
-    print("Enter list with empty element")
+    B=sorted(A)
+    print(A[-1]+1)
 #print(min(solution(A)))
