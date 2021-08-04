@@ -21,6 +21,12 @@ Linar | str| False
     >>Linar=True
     >>Linar==True
     True
+    >>> a=bool('Linar') - Если присвоить НЕпустой строке тип bool, то она так же соот-ет True
+    >>> a==True
+    True
+    >>> a=bool('') - Если присвоить пустой строке тип bool, то она также соот-ет False
+    >>> a==True
+    False
 
 2. Разобраться с различиями между input() и raw_input(). Также в контексте разных версий python: 2 и 3.
 
