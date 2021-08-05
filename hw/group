@@ -1,4 +1,4 @@
-root:x:0:linar
+root:x:0:linar,root
 daemon:x:1:
 bin:x:2:
 sys:x:3:
