@@ -50,9 +50,6 @@ moon = ''
 
 grpfile.seek(0)
 
-# for el in grpfile:
-#     print(el)
-
 i = 0
 for el in grpfile:
     try:
@@ -67,5 +64,5 @@ for el in grpfile:
             continue
         i += 1
     except KeyError:
-        print()
+        z=1
 print(moon)
