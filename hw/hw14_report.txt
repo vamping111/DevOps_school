@@ -1,0 +1,9 @@
+┌──(root💀linar-Aspire-E5-575G)-[~/DevOps_school/Python/DevOps_school/hw]
+└─# ./hw14.py
+
+┌──(root💀linar-Aspire-E5-575G)-[~/DevOps_school/Python/DevOps_school/hw]
+└─# ./hw14_2.py
+
+Name: Mary
+Emp_id: 512
+Department: DBA
