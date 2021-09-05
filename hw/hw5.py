@@ -7,6 +7,9 @@ try:
     (min(solution(A)))
     print("The value: ",(min(solution(A))), " is missed")
 except ValueError:
-    B=sorted(A)
-    print(A[-1]+1)
-#print(min(solution(A)))
+    B = (A[0]-1)
+    if B == 0:
+        print(A[-1]+1)
+    elif B >= 0:
+        print(B)
+
