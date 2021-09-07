@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 
-def matrix(*a):
-	x=''
-	quan = len(list(*a))
-	for i in range(int(quan)):
-		x = [x for j in range(list(*a)[i])]
-	return x
-
-print(matrix([2,2]))
-
-
+def matrix(a):
+    x = ''
+    quan=len(a)
+    if (quan == 1):
+        return [x] * a[0]
+    else:
+        return [matrix(a[1:]) for j in range(a[0])]
