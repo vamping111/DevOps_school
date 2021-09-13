@@ -17,9 +17,22 @@ True
 False
 >>> bool('0')
 True
+>>> bool(None)
+False
+>>> bool('None')
+True
+>>> bool([])
+False
+>>> bool(())
+False
+>>> bool()
+False
+>>> bool({})
+False
 
 Вывод для int: все значения, кроме 0 являются значением True.
 Вывод для str: все значения, кроме пустой строки являются True.
+    Так же: значение None является False(но это NoneType, и не является ни int, ни str). Пустые кортежи, списки и словари так же являются False.
 
 2. Разобраться с различиями между input() и raw_input(). Также в контексте разных версий python: 2 и 3.
 
