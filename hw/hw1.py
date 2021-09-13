@@ -1,38 +1,25 @@
 1. Составить таблицу соответствия между различными объектами основных классов: int, str и объектами класса bool.
-
-Object|Type|Bool_value
-------|----|----------
-a     | str| False
-Linar | str| False
-7     | int| False
-1     | int| True
-
-По умолчанию, все объекты, кроме 1 равны False, это касается int, но не str.
-
-'1' == True
+>>> bool(1)
+True
+>>> bool(500)
+True
+>>> bool(0)
 False
-1 == True
+>>> bool(-1)
+True
+>>> bool('1')
+True
+>>> bool('privet')
+True
+>>> bool('-1')
+True
+>>> bool('')
+False
+>>> bool('0')
 True
 
-Но можно явно указать, чтобы определенная переменная обращалась к True.
-Например:
-    >>1==True
-    True
-    >>7==True
-    False
-    >>Linar==True
-    False
-    >>str('True')==True
-    False
-    >>Linar=True
-    >>Linar==True
-    True
-    >>> a=bool('Linar') - Если присвоить НЕпустой строке тип bool, то она так же соот-ет True
-    >>> a==True
-    True
-    >>> a=bool('') - Если присвоить пустой строке тип bool, то она также соот-ет False
-    >>> a==True
-    False
+Вывод для int: все значения, кроме 0 являются значением True.
+Вывод для str: все значения, кроме пустой строки являются True.
 
 2. Разобраться с различиями между input() и raw_input(). Также в контексте разных версий python: 2 и 3.
 
