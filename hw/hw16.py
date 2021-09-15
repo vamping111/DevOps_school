@@ -3,7 +3,7 @@
 from geopy import GoogleV3
 
 point=open("./hw16.txt","r")
-location = GoogleV3(api_key="AIzaSyAOVTj38NidnPmLrnDU3bVzOd6FPenRATM", domain="maps.google.ru").reverse(point)
+location = GoogleV3(api_key="My_API", domain="maps.google.ru").reverse(point)
 
 print(location.address)
 print(location.latitude, location.longitude)
